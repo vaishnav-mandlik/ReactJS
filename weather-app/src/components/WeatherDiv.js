@@ -33,12 +33,12 @@ const WeatherDiv = ({ tempInfo }) => {
   let sec = sunset;
   let date = new Date(sec * 1000);
   let sunsetTime = `${date.getHours()}:${date.getMinutes()}`;
-  console.log(sunsetTime);
+  // console.log(sunsetTime);
   return (
     <>
       <div className="widget">
         <div className="weatherIcon">
-          <i className={`wi ${weatherState}`}></i>
+          <i className={`svg-color wi ${weatherState}`}></i>
         </div>
         <div className="weatherInfo">
           <div className="temperature">
@@ -56,7 +56,7 @@ const WeatherDiv = ({ tempInfo }) => {
           <div className="temp-info-minmax">
             <div className="two-sided-section">
               <p>
-                <i className={`wi wi-sunset`}></i>
+                <i className={`svg-color wi wi-sunset`}></i>
               </p>
               <p className="extra-info-leftside">
                 {sunsetTime} PM <br /> sunset
@@ -64,7 +64,7 @@ const WeatherDiv = ({ tempInfo }) => {
             </div>
             <div className="two-sided-section">
               <p>
-                <i className={"wi wi-humidity"}></i>
+                <i className={" svg-color wi wi-humidity"}></i>
               </p>
               <p className="extra-info-leftside">
                 {humidity} <br /> Humidity
@@ -74,7 +74,7 @@ const WeatherDiv = ({ tempInfo }) => {
           <div className="weather-extra-info">
             <div className="two-sided-section">
               <p>
-                <i className={"wi wi-rain"}></i>
+                <i className={"svg-color wi wi-rain"}></i>
               </p>
               <p className="extra-info-leftside">
                 {pressure} <br /> Pressure
@@ -82,7 +82,7 @@ const WeatherDiv = ({ tempInfo }) => {
             </div>
             <div className="two-sided-section">
               <p>
-                <i className={"wi wi-strong-wind"}></i>
+                <i className={"svg-color wi wi-strong-wind"}></i>
               </p>
               <p className="extra-info-leftside">
                 {speed} <br /> Speed

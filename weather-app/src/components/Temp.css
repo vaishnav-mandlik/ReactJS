@@ -11,9 +11,9 @@
 :root {
   --rad: 0.7rem;
   --dur: 0.3s;
-  --color-dark: #2f2f2f;
+  --color-dark: #fffefe;
   --color-light: #fff;
-  --color-brand: #57bd84;
+  --color-brand: #3d99ea;
   --font-fam: "Lato", sans-serif;
   --height: 5rem;
   --btn-width: 6rem;
@@ -34,10 +34,9 @@ body {
   height: 400px;
   width: 650px;
   flex-wrap: wrap;
-  cursor: pointer;
-  border-radius: 20px;
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
-    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .widget .weatherIcon {
   flex: 1 100%;
@@ -87,7 +86,7 @@ body {
 .widget .date {
   flex: 0 0 30%;
   height: 40%;
-  background: #70c1b3;
+  background: #3d99ea;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -96,10 +95,12 @@ body {
   font-weight: 800;
   text-align: center;
 }
-
-.widget .extra-temp {
+.svg-color {
+  color: #3d99ea;
+}
+.extra-temp {
   flex: 1 100%;
-  padding: 5% 0;
+  /* padding: 5% 0 0 0; */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #fafafa;
@@ -122,7 +123,6 @@ body {
   text-align: center;
   align-items: center;
   color: #70c1b3;
-  /* background-color: blanchedalmond; */
 }
 
 .widget .extra-temp .extra-info-leftside {
@@ -139,29 +139,31 @@ body {
   width: 100%;
   position: relative;
   display: flex;
+
   justify-content: center;
 }
 
 .searchTerm {
   width: 50%;
-  /* border: 3px solid #00b4cc; */
   border: none;
   padding: 16px;
+
   height: 20px;
   border-radius: 5px 0 0 5px;
+  border: 0.4px solid black;
   outline: none;
   font-size: 18px;
 }
 
 .searchTerm:focus {
-  color: #00b4cc;
+  color: #3d99ea;
 }
 
 .searchButton {
   width: 80px;
   height: 32px;
   border: none;
-  background: #048b9c;
+  background: #3d99ea;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -172,7 +174,7 @@ body {
 }
 
 .searchButton:hover {
-  background-color: #17b8ce;
+  background-color: #1b87e5;
 }
 
 .wrap {
